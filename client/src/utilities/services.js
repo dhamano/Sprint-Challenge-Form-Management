@@ -15,8 +15,13 @@ export const registerUser = (credentials, formikBag) => {
   console.log('credentials',credentials);
   return axios.post(`${baseUrl}/api/register`, credentials)
     .then( res => {
+      console.log(res);
+      if(res.data.error === true) {
+        return [ res.data.error, res.data.message];
+      } else {
       setLocalStorage('token', res.data.token);
       formikBag.props.history.push("/");
+      }
     })
     .catch( err => console.log('REGISTERATION ERROR',err.response) );
 }

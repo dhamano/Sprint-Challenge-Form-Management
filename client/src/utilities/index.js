@@ -5,7 +5,8 @@
 //////////////////////////////////////
 
 export const hasLocalVar = ( key ) => {
-  return localStorage.getItem( key) ? true : false
+  let storageExists = localStorage.getItem( key );
+  return storageExists && (storageExists !== 'undefined') ? true : false
 };
 
 
@@ -17,6 +18,17 @@ export const hasLocalVar = ( key ) => {
 
 export const setLocalStorage = ( key, value ) => {
   localStorage.setItem( key, value );
+};
+
+
+/////////////////////////
+//                     //
+//  Get Local Storage  //
+//                     //
+/////////////////////////
+
+export const getLocalStorage = ( key ) => {
+  return localStorage.getItem( key );
 };
 
 //////////////////////////////////

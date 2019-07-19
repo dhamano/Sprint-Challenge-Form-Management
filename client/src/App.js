@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import PrivateRoute from './utilities/PrivateRoute';
 
-import { hasLocalVar } from './utilities';
+import { hasLocalVar, getLocalStorage } from './utilities';
 
 import Navigation from './components/Navigation';
 import Login from './components/Login';

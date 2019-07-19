@@ -9,14 +9,10 @@ const Login = ({ touched, errors, initialValues, values, ...rest}) => {
   const [ onLogin, setOnLogin ] = useState(true);
   const [ whatForm, setWhatForm ] = useState('login');
 
-  console.log('rest',rest);
-
   const toggleRegistration = () => {
     if(whatForm === 'login') {
-      console.log('set register')
       setWhatForm('register');
     } else {
-      console.log('set login')
       setWhatForm('login');
     }
     setOnLogin(!onLogin);

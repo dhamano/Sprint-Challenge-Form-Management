@@ -11,8 +11,6 @@ const Home = props => {
     getList().then( res => setTheList(res) );
   }, []);
 
-  console.log(theList);
-
   if(!theList) {
     return <Loader type="Ball-Triangle" color="#000000" height="200" width="200" />
   }
