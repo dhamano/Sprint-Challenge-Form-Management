@@ -24,30 +24,40 @@ In the challenge for this Sprint, you will demonstrate proficiency by creating a
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why are forms used so often in web applications and software?
+- [x] Why are forms used so often in web applications and software?
+		
+		They are used for collecting data, for example, for authentication, to let people submit emails without exposing an email address, collecting data, or putting data into a database.
 
-- [ ] What advantages are there by using a forms library like Formik?
+- [x] What advantages are there by using a forms library like Formik?
 
-- [ ] What is stateful logic?
+		It makes handling forms easier as it takes care of onChange handlers and using state to contol the input fields as well as onSubmit functionality. This all makes it quick to deploy new forms and, since it supports Yup, makes validating forms easy as well.
 
-- [ ] What is a custom hook, and what does it mean to compose hooks together?
+- [x] What is stateful logic?
 
-- [ ] Describe the process of retriving a token from a server and using that token in subsequent API calls.
+		Stateful logic is login handled by state, whether it is class state or hooks.
+
+- [x] What is a custom hook, and what does it mean to compose hooks together?
+
+		A custom hook is a HOC that we create to have it do what we want it to do. In our example for class we had it check local storage and either save to it or retrieve data from it and then, depending on what it did, use that data to save to state.
+
+- [x] Describe the process of retriving a token from a server and using that token in subsequent API calls.
+
+		We send the user data such as authentication information to an authorization api and, if it is approved, the server returns a token which is a hash of information, back to our client which we will need to use to use to be able to grab data that is private. Like on facebook, you can only see your newsfeed and edit your proflie if you're authenticated and have that token stored on your browser.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [x] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
-- [ ] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
-- [ ] In the terminal, navigate back to the main folder, then into the `client` folder.
-- [ ] Create your React app here.
+- [x] Implement the project on this Branch, **committing progress & changes often.**
+- [x] Push commits: `git push origin <firstName-lastName>`.
+- [x] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
+- [x] In the terminal, navigate back to the main folder, then into the `client` folder.
+- [x] Create your React app here.
 
 Follow these steps for completing your project:
 
