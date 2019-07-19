@@ -129,3 +129,47 @@ main {
     }
   }
 }
+
+.the-list {
+  display: flex;
+  flex-flow: row wrap;
+
+  .item-card {
+    width: calc(33% - 2.5rem);
+    margin: 1.25rem;
+    padding: 1.25rem;
+    background: #f00;
+    color: #fff;
+    text-align: left;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    dl {
+      margin-bottom: 0;
+    }
+
+    dt, dd {
+      min-width: 50%;
+      margin: 4px 0;
+      display: inline-block;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+}

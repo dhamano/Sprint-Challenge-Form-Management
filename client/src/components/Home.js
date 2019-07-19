@@ -16,7 +16,7 @@ const Home = props => {
   }
 
   return(
-    <main>
+    <main className="the-list">
       {
         theList.map( (item, i) => {
           return <DisplayCard {...props} itemInfo={item} key={'card'+i.toString().padStart(2,'0')} />

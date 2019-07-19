@@ -2,15 +2,15 @@ import React from 'react';
 
 const DisplayCard = props => {
   return(
-    <div>
+    <div className="item-card">
       <h2>{props.itemInfo.name}</h2>
       <dl>
         <dt>Course Type:</dt>
         <dd>{props.itemInfo.course}</dd>
         <dt>Technique:</dt>
         <dd>{props.itemInfo.technique}</dd>
-        <dt>Ingredients:</dt>
-        <dl>
+        <dt className="full-width">Ingredients:</dt>
+        <dd>
           <ul>
             {
               props.itemInfo.ingredients.map( (ingredient, i) => {
@@ -18,7 +18,7 @@ const DisplayCard = props => {
               })
             }
           </ul>
-        </dl>
+        </dd>
       </dl>
     </div>
   )
