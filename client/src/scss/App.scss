@@ -2,3 +2,39 @@
   text-align: center;
 }
 
+nav {
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+
+  position: sticky;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form-container {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .login-toggle-container {
+    display: flex;
+
+    div {
+      width: 50%;
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}
