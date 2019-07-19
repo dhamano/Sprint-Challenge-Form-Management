@@ -20,6 +20,13 @@ nav {
 
   ul {
     margin-right: 1.25rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+    li {
+      margin-left: 1.25rem;;
+    }
   }
 
   a {
